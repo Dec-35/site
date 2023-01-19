@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mériadec Legal</title>
+    <link rel="icon" href="https://dcjetc.com/meriadec-legal/portfolio/media/images/logoNeonD.png">
+  </head>
+
+  <body>
+    <div id="one"></div>
+    <nav id="navBar">
+      <div id="menuItems">
+        <div id="menuLinks">
+          <div>
+            <div id="logo">
+              <input id="logoSwitch" type="checkbox" onclick="toggleSwitch()">
+
+              </input>
+              <label for="logoSwitch"></label>
+
+              <div id="splashFill">
+
+              </div>
+              <div id="contact">
+
+                <a href="#one" onclick="toggleSwitch()">Accueil </a>
+
+                <a href="#scrollTwo" onclick="toggleSwitch()">Qui suis-je ? </a>
+
+                <a href="#caroussel" onclick="toggleSwitch()">Photos </a>
+
+                <a href="#quak" onclick="toggleSwitch()">Projets </a>
+
+                <a href="#contactGrid" onclick="toggleSwitch()">Contact </a>
+
+                <button onclick="toggleSwitch()">X</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <a href="#scrollTwo"> Qui suis-je ? </a>
+
+          <a href="#caroussel"> Photos </a>
+
+          <a href="#quak"> Projets </a>
+
+          <a href="#contactGrid"> Contact </a>
+
+
+        </div>
+        <div id="themeSwitch">
+          <input type="checkbox" id="themePicker" onclick="document.body.toggleAttribute('data-light')" />
+          <label for="themePicker" id="themeSlide">
+            <div id="themeCircle"></div>
+          </label>
+        </div>
+      </div>
+    </nav>
+    <div>
+
+
+      <div id="title">
+        <div>
+          <h1>Developpement</h1>
+          <h1>et design web</h1>
+          <h1 class="underline">Créatifs.</h1>
+        </div>
+
+        <img src="coding-Illustration.svg" id="blob"></img>
+      </div>
+      <a href="#scrollTwo" id="scrollDown">Qui suis-je ?</a>
+    </div>
+    <div id="scrollTwo" style="display: hidden; transform: translateY(150px);"></div>
+
+    <div id="two">
+
+      <div class="descMoi">
+        <span>
+          <h1 class="styledFont">Mériadec Legal</h1>
+          <p>
+            Je suis un étudiant à l'IUT de Laval et je suis en
+            première année de mon BUT informatique. J'adore le développement
+            web, autant au niveau du design que du codage. Je fais également
+            de la photo et de la vidéo. Voir : <a id="cvLink"
+              href="https://dcjetc.com/meriadec-legal/CV-Meriadec_Legal.pdf" download>Mon CV</a> - <a id="cvLink"
+              href="https://dcjetc.com/meriadec-legal/portfolio" target="_blank">Mon Portfolio</a>
+          </p>
+
+        </span>
+        <img class="img" src="portrait1.jpg" alt="un portrait de moi">
+      </div>
+      <div id="scollThree" style="display: hidden; transform: translateY(350px);"></div>
+    </div>
+    <div id="three">
+      <div id="caroussel">
+
+        <h1 class="styledFont partTitle">Mes Photos</h1>
+
+        <div class="slideRight firstCaroussel" onclick="slide('imgContainer',900)"></div>
+        <div class="slideLeft firstCaroussel" onclick="slide('imgContainer',-900)"></div>
+        <div id="imgContainer" class="caroussel">
+
+          <img src="https://dcjetc.com/meriadec-legal/photos/rosesmall.JPG" loading="lazy" alt="">
+
+          <img src="https://dcjetc.com/meriadec-legal/photos/romarin-macro.JPG" loading="lazy" alt="">
+          <img class="highPic" src="https://dcjetc.com/meriadec-legal/photos/RoseMonumentsmall.jpg" loading="lazy"
+            alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/papillonsmall.JPG" loading="lazy" alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/BlancheEausmall.jpg" loading="lazy" alt="">
+          <img class="highPic" src="https://dcjetc.com/meriadec-legal/photos/RoseBlanchesmall.jpg" loading="lazy"
+            alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/NYCnuit.JPG" loading="lazy" alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/NYC.JPG" loading="lazy" alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/MousseEausmall.JPG" loading="lazy" alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/Eccureil.JPG" loading="lazy" alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/NYClights.JPG" loading="lazy" alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/fleursRoses.JPG" loading="lazy" alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/grenouillesmall.JPG" loading="lazy" alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/veloJaune.jpeg" loading="lazy" alt="">
+
+          <img src="https://dcjetc.com/meriadec-legal/photos/voitureStyleLand.jpeg" loading="lazy" alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/voitureStyle.jpeg" loading="lazy" alt="">
+          <img class="highPic" src="https://dcjetc.com/meriadec-legal/photos/garsFluo.jpeg" loading="lazy" alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/parapluieRougeLaval.jpeg" loading="lazy" alt="">
+          <img src="https://dcjetc.com/meriadec-legal/photos/lavalSoir.jpeg" loading="lazy" alt="">
+        </div>
+
+        <div class="descMoi" id="secondDesc">
+          <span>
+            <h1 class="styledFont">Plus ?</h1>
+            <p>
+              Retrouvez-moi sur <a class="links" href="https://www.behance.net/dec35">Behance</a> pour plus de photos et
+              sur <a class="links" href="https://www.youtube.com/@dec35" target="_blank">YouTube</a> pour découvrir mes
+              vidéos !
+            </p>
+          </span>
+          <iframe class="img" width="560" height="315" src="https://www.youtube.com/embed/S-XPciCPP8w"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+
+    </div>
+    <h1 class="styledFont partTitle" id="quak">Mes Projets de développement</h1>
+
+    <div id="projectContainer">
+      <div class="projects">
+        <a target="_blank" href="https://dcjetc.com/meriadec-legal/portfolio" class="imgProj" id="projSite"></a>
+        <p>Ce site a été développé à la main avec du <em>HTML</em>, du
+          <em>CSS</em> et du <em>JavaScript</em>. Vous y
+          retrouverez plus d'informations personnelles comme mes loisirs et de quoi me contacter.
+        </p>
+      </div>
+      <div class="projects">
+        <a target="_blank" href="https://dcjetc.com/meriadec-legal/TODO/" class="imgProj" id="projTODO"></a>
+        <p> C'est tout simplement un gestionnaire de tâches, aussi appellé <em>To-do list</em>, codé en <em>PHP</em>,
+          <em>HTML</em>, en <em>CSS</em> et en
+          <em>JavaScript</em>.
+        </p>
+      </div>
+      <div class="projects">
+        <a href="https://dcjetc.com/virusx/" target="_blank" class="imgProj" id="projVirusx"></a>
+        <p>Ceci est un jeu de simulation d'un virus sur Terre. Il se joue sur
+          internet ou en tant qu'application bureau à télécharger et a été
+          développé en <em>HTML</em>, en <em>CSS</em> et en
+          <em>JavaScript</em>. La version bureau du jeu utilise
+          <em>Electron</em> et <em>NodeJS</em>.
+        </p>
+      </div>
+      <div class="projects">
+        <a target="_blank" href="https://dollarclicker.github.io/" class="imgProj" id="projClicker"></a>
+        <p>
+          Ceci est un jeu de type "clicker" qui est un type de jeu, souvent en
+          ligne qui a été vastement popularisé avec
+          <a target="_blank" href="https://fr.wikipedia.org/wiki/Cookie_Clicker" target="_blank">Cookie Cliker</a>. Ce
+          jeu a été développé en <em>HTML</em>, en <em>CSS</em> et en
+          <em>JavaScript</em> avec l'aide d'un ami dont vous pouvez retrouver
+          le site web en visitant le jeu.
+        </p>
+      </div>
+
+      <div class="projects">
+        <a download href="https://www.dcjetc.com/meriadec-legal/portfolio/media/knightAdventures.zip" class="imgProj"
+          id="projPyxel"></a>
+        <p>
+          C'est un jeu 2D créé durant la
+          <em>Nuit du Code</em>, une Game jam de <em>6h</em> durant laquelle
+          il fallait créer un jeu retro en <em>Python</em>. Il a été créé avec une interface
+          graphique propre au Game jam. son succès au sein du lycée
+          lui a permi de partir au classement mondial. Le but est simplement de pousser
+          la boite sur le bouton.
+        </p>
+      </div>
+    </div>
+    <div id="contactContainer">
+      <h1 class="styledFont partTitle" id="contactTitle">Contactez-moi !</h1>
+
+      <div id="contactGrid">
+
+        <a href="mailto:decleggal@gmail.com">Mail ?</a>
+        <a target="_blank" href="https://discordapp.com/users/498538192837017610/">Discord ?</a>
+        <a target="_blank" href="https://www.instagram.com/dec.lgl">Instagram ?</a>
+
+
+      </div>
+      <p id="copyright">&#169 Mériadec Legal 2022-2023</p>
+    </div>
+
+  </body>
+
+  <script>
+
+    function toggleSwitch() {
+      document.getElementById('logoSwitch').toggleAttribute('checked');
+      if (document.getElementById('logoSwitch').hasAttribute('checked') == true) {
+        document.getElementById('logo').classList.remove('side');
+      } else if (window.scrollY > 20) {
+        document.getElementById('logo').classList.add('side');
+      }
+    }
+
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: light)").matches
+    ) {
+      document.getElementById("themePicker").checked = false;
+      document.body.setAttribute("data-light", "");
+    } else {
+
+      document.getElementById("themePicker").checked = true;
+    }
+
+    document.body.onscroll = () => {
+      if (
+        window.scrollY > 20 &&
+        document.getElementById("logo").classList.contains("side") == false && document.getElementById('logoSwitch').hasAttribute('checked') == false
+      ) {
+        document.getElementById("logo").classList.add("side");
+        var rect = document.getElementById("logo").getBoundingClientRect();
+        document
+          .getElementById("logo")
+          .style.setProperty("--distGauche", "-" + rect.left + "px");
+
+      } else if (
+        window.scrollY < 20 &&
+        document.getElementById("logo").classList.contains("side") && document.getElementById('logoSwitch').hasAttribute('checked') == false
+      ) {
+        document.getElementById("logo").classList.remove("side");
+      }
+    };
+
+    document.addEventListener("wheel", (evt) => {
+      evt.preventDefault;
+      document.getElementById('imgContainer').scrollLeft += evt.deltaY * 1.15;
+
+    });
+
+    function slide(id, qt) {
+      document.getElementById(id).scrollLeft += qt;
+    }
+
+    document.addEventListener("click", (evt) => {
+
+      e = document.createElement("div");
+      e.classList.add("clickEffect");
+
+      e.style.left = evt.clientX + "px";
+      e.style.top = evt.clientY + window.scrollY + "px";
+
+      document.body.appendChild(e);
+      Array.from(document.getElementsByClassName("clickEffect")).forEach(
+        (e) => {
+          setTimeout(() => {
+            e.remove();
+          }, 1000);
+        }
+      );
+    });
+  </script>
+
+</html>
