@@ -650,7 +650,11 @@ em {
   overflow: hidden;
   box-shadow: 0 0 12px var(--box_shadow);
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 2fr auto 1fr;
+}
+#projectContainer .projects h2 {
+  margin: 0.5rem 1rem;
+  font-weight: 700;
 }
 #projectContainer .projects .imgProj {
   width: 100%;
@@ -667,8 +671,8 @@ em {
 #projectContainer .projects .imgProj#projVirusx {
   background-image: url("https://www.dcjetc.com/meriadec-legal/portfolio/media/images/virusXsite.png");
 }
-#projectContainer .projects .imgProj#projClicker {
-  background-image: url("https://www.dcjetc.com/meriadec-legal/portfolio/media/images/DollarClicker.png");
+#projectContainer .projects .imgProj#projBdeinfo {
+  background-image: url("https://portfolio.m-legal.fr/images/bdeinfoPic.png");
 }
 #projectContainer .projects .imgProj#projPyxel {
   background-image: url("pyxel-gameplay-video.gif");

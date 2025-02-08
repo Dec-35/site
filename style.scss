@@ -773,7 +773,12 @@ em {
 
 
         display: grid;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 2fr auto 1fr;
+
+        h2 {
+            margin: 0.5rem 1rem;
+            font-weight: 700;
+        }
 
         .imgProj {
 
@@ -794,8 +799,8 @@ em {
                 background-image: url("https://www.dcjetc.com/meriadec-legal/portfolio/media/images/virusXsite.png");
             }
 
-            &#projClicker {
-                background-image: url("https://www.dcjetc.com/meriadec-legal/portfolio/media/images/DollarClicker.png");
+            &#projBdeinfo {
+                background-image: url("https://portfolio.m-legal.fr/images/bdeinfoPic.png");
             }
 
             &#projPyxel {
