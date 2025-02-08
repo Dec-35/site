@@ -87,8 +87,6 @@ em {
   display: flex;
   align-items: center;
   vertical-align: middle;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 1rem;
   gap: 12px;
@@ -142,8 +140,6 @@ em {
 }
 
 #themeSwitch {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   align-items: center;
@@ -171,7 +167,8 @@ em {
   border-radius: 50%;
   aspect-ratio: 1;
   height: var(--height);
-  background-image: url("https://bdemmilaval.fr/images/icons/switch.svg");
+  background-image: url("themeSlider.png");
+  filter: flipH();
   background-size: cover;
 }
 
@@ -224,13 +221,8 @@ em {
   position: relative;
   display: block;
   margin: 1em auto 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   padding: 11px;
   border-radius: 50px;
   z-index: 700;
@@ -310,8 +302,6 @@ em {
   display: block;
   font-family: Playfair Display, serif;
   font-size: 1.5em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   filter: brightness(0.8);
 }
@@ -403,26 +393,12 @@ em {
 #logoSwitch[checked] ~ #splashFill {
   display: block;
   opacity: 1;
-  -webkit-animation: splash 750ms ease-out forwards;
-          animation: splash 750ms ease-out forwards;
+  animation: splash 750ms ease-out forwards;
 }
 
 #logoSwitch[checked] ~ #contact {
   display: grid;
-  -webkit-animation: appear 250ms ease-out forwards 450ms;
-          animation: appear 250ms ease-out forwards 450ms;
-}
-
-@-webkit-keyframes splash {
-  from {
-    transform: translate(-30%, -50%) scale(1);
-  }
-  to {
-    transform: translate(-30%, -3.7em) scale(1);
-    width: 80vw;
-    height: 110vh;
-    border-radius: 0;
-  }
+  animation: appear 250ms ease-out forwards 450ms;
 }
 
 @keyframes splash {
@@ -434,14 +410,6 @@ em {
     width: 80vw;
     height: 110vh;
     border-radius: 0;
-  }
-}
-@-webkit-keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes appear {
@@ -482,11 +450,9 @@ em {
   transition: all 250ms linear;
   width: 100%;
   aspect-ratio: 4;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
   background-color: var(--clr_60);
-  -webkit-mask-image: url(wave.svg);
-          mask-image: url(wave.svg);
+  mask-image: url(wave.svg);
   display: block;
   transform: translateY(-1px);
   z-index: 70;
@@ -502,8 +468,7 @@ em {
 #three::before {
   transform: rotateY(180deg);
   background-color: var(--clr_70);
-  -webkit-mask-image: url(waveb.svg);
-          mask-image: url(waveb.svg);
+  mask-image: url(waveb.svg);
 }
 
 #two::before {
@@ -512,8 +477,6 @@ em {
 
 .descMoi {
   width: 60%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   min-height: 250px;
   background-color: var(--bcg);
@@ -529,8 +492,7 @@ em {
 .descMoi .img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-right-radius: inherit;
 }
 .descMoi span {
@@ -571,8 +533,6 @@ em {
 
 #three {
   background-color: var(--clr_60);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -628,7 +588,6 @@ em {
   overflow-y: hidden;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: -webkit-fit-content;
   grid-template-columns: fit-content;
   grid-template-rows: repeat(2, 1fr);
   gap: 2px;
@@ -638,8 +597,7 @@ em {
 }
 .caroussel img {
   width: 450px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 300px;
 }
 .caroussel .highPic {
@@ -680,8 +638,6 @@ em {
   gap: 3.5em;
   padding: 3.5em;
   flex-wrap: wrap;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   justify-content: center;
@@ -734,8 +690,7 @@ em {
 #projectContainer .projects .imgProj:hover::after {
   opacity: 1;
   background-color: rgba(219, 219, 219, 0.7725490196);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 #projectContainer .projects p {
   margin: 1em;
@@ -745,11 +700,7 @@ em {
 
 #contactGrid {
   display: grid;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 6rem auto;
   padding: 4rem 0;
@@ -759,8 +710,6 @@ em {
 }
 #contactGrid a {
   display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   transition: color 150ms ease-out;
@@ -795,24 +744,13 @@ em {
   aspect-ratio: 1;
   border-radius: 50px;
   background-color: #ffffff;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   z-index: 150 !important;
   box-shadow: 0 0 4px rgba(163, 163, 163, 0.7176470588);
   transform-origin: center;
   transform: translate(-50%, -50%);
-  -webkit-animation: fadeOut 750ms ease forwards;
-          animation: fadeOut 750ms ease forwards;
+  animation: fadeOut 750ms ease forwards;
   pointer-events: none;
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 @keyframes fadeOut {
@@ -825,11 +763,9 @@ em {
 }
 @media only screen and (max-width: 1000px) {
   body,
-html {
+  html {
     overflow-x: hidden;
     width: 100vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
   }
   #blob {
@@ -837,8 +773,6 @@ html {
   }
   #title h1 {
     font-size: 7vw;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
   }
   .descMoi {
@@ -885,17 +819,6 @@ html {
   #splashFill {
     top: 0;
   }
-  @-webkit-keyframes splash {
-    from {
-      transform: translate(-30%, -50%) scale(1);
-    }
-    to {
-      transform: translate(-30%, -3.7em) scale(1);
-      width: 100vw;
-      height: 110vh;
-      border-radius: 0;
-    }
-  }
   @keyframes splash {
     from {
       transform: translate(-30%, -50%) scale(1);
@@ -932,8 +855,6 @@ html {
   .projects {
     width: 98% !important;
     aspect-ratio: unset !important;
-    height: -webkit-fit-content !important;
-    height: -moz-fit-content !important;
     height: fit-content !important;
     grid-template-rows: 350px 1fr !important;
   }
@@ -950,10 +871,10 @@ html {
     color: var(--clr_10);
   }
   #quak,
-#contactTitle {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
+  #contactTitle {
     width: fit-content;
     margin: 12rem 0 2rem 20%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
